@@ -18,7 +18,7 @@ func ExampleExecute() {
     }
 }
 
-func ExampleExecuteOneLiner() {
+func ExampleExecute_OneLiner() {
     rst, err := New("foobarbazbuzz", "dummy-999").SetSite(SITE_ADULT).SetLength(1).Execute()
     if err != nil {
         fmt.Println(err)
