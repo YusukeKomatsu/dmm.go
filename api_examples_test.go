@@ -2,7 +2,7 @@ package dmm
 
 import "fmt"
 
-func ExampleApi() {
+func ExampleExecute() {
     api := New("foobarbazbuzz", "dummy-990")
     api.SetSite(SITE_ALLAGES)
     api.SetService("mono")
@@ -18,7 +18,7 @@ func ExampleApi() {
     }
 }
 
-func ExampleApiOneLiner() {
+func ExampleExecuteOneLiner() {
     rst, err := New("foobarbazbuzz", "dummy-999").SetSite(SITE_ADULT).SetLength(1).Execute()
     if err != nil {
         fmt.Println(err)
