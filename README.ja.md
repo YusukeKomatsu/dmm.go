@@ -1,4 +1,4 @@
-# dmm.go
+# dmm.go [![GoDoc](https://img.shields.io/badge/go-reference-blue.svg?style=flat-square)](https://godoc.org/github.com/usk81/dmm.go)
 DMM Web API クライアント
 
 参照: [DMM Affiliate](https://affiliate.dmm.com/)
