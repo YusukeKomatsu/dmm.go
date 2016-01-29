@@ -45,17 +45,19 @@ if err != nil {
 
 ## Request parameter
 
-| API | this library | description |
-|---|---|---|
-| api_id | ApiId | API ID |
-| affiliate_id | AffiliateId | affiliate iD |
-| operation | Operation | API method name |
-| version | Version | API version |
-| timestamp | Timestamp | timestamp |
-| site | Site | site name (DMM.com or DMM.co.jp) |
-| service | Service | target service |
-| floor | Floor | target floor |
-| hits | Length | maximum request length |
-| offset | Offset | request data offset |
-| sort | Sort | response data sort |
-| keyword | Keyword | request keyword |
+>r = *dmm.request
+
+| API | this library | description | e.g. | how to set parameter |
+|---|---|---|---|---|
+| api_id | ApiId | API ID | "KcZ2ymn6VPufm4XjxFu6" | r := New("KcZ2ymn6VPufm4XjxFu6", "dummy-999") |
+| affiliate_id | AffiliateId | affiliate iD | dummy-999 | r := New("foobarbazbuzz", "dummy-999") |
+| operation | Operation | API method name | ItemList | Nothing (operation exists ItemList **ONLY**) |
+| version | Version | API version | 2.00 | Nothing (version 2 **ONLY**) |
+| timestamp | Timestamp | timestamp | 2006-01-02 15:04:05 | Nothing(timestamp is automatically set) |
+| site | Site | site name (DMM.com or DMM.co.jp) | DMM.co.jp | r.SetSite("DMM.com") |
+| service | Service | target service | mono | r.SetService("mono") |
+| floor | Floor | target floor | dvd | r.SetFloor("dvd") |
+| hits | Length | maximum request length | 100 | r.SetLength(100) |
+| offset | Offset | request data offset | 0 | r.SetOffset(0) |
+| sort | Sort | response data sort | rank | r.SetSort("rank") |
+| keyword | Keyword | request keyword | social network | r.SetKeyword("social network") |
