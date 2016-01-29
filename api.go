@@ -24,7 +24,7 @@ const (
 
 var (
     API_URL      = "http://affiliate-api.dmm.com/"
-    API_VERSION  = "2.0.0"
+    API_VERSION  = "2.00"
 )
 
 type Request struct {
